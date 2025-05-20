@@ -1,0 +1,7 @@
+azure-functions
+azure-storage-blob
+beautifulsoup4
+requests
+python-dateutil
+urllib3
+lxml
