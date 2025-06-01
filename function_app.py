@@ -33,7 +33,7 @@ def ZameenScraper(myTimer: func.TimerRequest) -> None:
             "Missing storage connection string. Please configure ZameenBlobStorage in Application Settings.")
         return
 
-    container_name = os.environ.get("CONTAINER_NAME")
+    container_name = os.environ.get("CONTAINER_NAME", "rawdata")
     max_pages = int(os.environ.get("MAX_PAGES", "100"))
     scraper_delay = float(os.environ.get("SCRAPER_DELAY", "2.5"))
 
